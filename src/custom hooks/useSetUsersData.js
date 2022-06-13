@@ -6,7 +6,7 @@ function useSetUsersData(option) {
 
     function filter(event) {
         context.setModifyedUsersData(context.usersData.filter(user => {
-            if (user[option].toLowerCase().includes(`${event.target.value}`)) {
+            if (user[option].toLowerCase().includes(`${(event.target.value).toLowerCase()}`)) {
                 return user
             }
             }))
